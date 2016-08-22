@@ -1,0 +1,101 @@
+///////////////
+//FONTS ICONS//
+///////////////
+
+$fa-var-home: "\f015";
+$fa-var-search: "\f002";
+$fa-var-chevron-left: "\f053";
+$fa-var-chevron-right: "\f054";
+$fa-var-chevron-down: "\f078";
+$fa-var-chevron-up: "\f077";
+
+
+///////////////
+////COLORS/////
+///////////////
+
+$primary-color: #000;
+$primary-hover-color: #003B93;
+$body-color: #000;
+$title-color: #000;
+$alternative-color: #68899a;
+
+$nav-bg: #D5E3F0;
+$button-bg: #002A6B;
+
+///////////////
+/////FLEX//////
+///////////////
+
+@mixin flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-flow($flow) {
+  -webkit-flex-flow: $flow;  
+  -moz-flex-flow: $flow;     
+  -ms-flex-flow: $flow;      
+  flex-flow: $flow;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
+}
+
+@mixin justify-content($just) {
+  -webkit-justify-content: $just;  
+  -moz-justify-content: $just;     
+  -ms-justify-content: $just;     
+  justify-content: $just;
+}
+
+@mixin align-items($align) {
+  -webkit-align-items: $align;  
+  -moz-align-items: $align;     
+  -ms-align-items: $align;     
+  align-items: $align;
+}
+
+@mixin align-content($content) {
+  -webkit-align-content: $content;  
+  -moz-align-content: $content;     
+  -ms-align-content: $content;     
+  align-content: $content;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+  -moz-box-ordinal-group: $val;     
+  -ms-flex-order: $val;     
+  -webkit-order: $val;  
+  order: $val;
+}
+
+@mixin align-self($self) {
+  -webkit-align-self: $vself;  
+  -moz-align-self: $self;     
+  -ms-align-self: $self;      
+  align-self: $self;
+}
+
+@mixin clearfix() {
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}

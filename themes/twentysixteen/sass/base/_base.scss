@@ -1,0 +1,160 @@
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, address, big, cite, code,
+img, b, u, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, table, tr, th, td,
+input, textarea, article {
+	box-sizing: border-box;
+}
+
+
+body {
+	position: relative;
+	font-family: 'lato', sans-serif;
+	font-size: 14px;
+	color: $body-color;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	margin-bottom: 15px;
+	line-height: 1.4;
+	color: $title-color;
+}
+
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 22px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 16px;
+}
+h6 {
+    font-size: 12px;
+}
+
+p {
+	font-size: 14px;
+	line-height: 1.4;
+	font-weight: 300;
+	margin-bottom: 15px;
+	color: $body-color;
+}
+
+a {
+	text-decoration: none;
+	color: $alternative-color;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	transition: all .3s ease;
+	
+	&:hover {
+		color: #000;
+		text-decoration: none;
+	}
+
+	&:focus {
+		text-decoration: none;
+		border: none;
+		outline: none;
+	}
+}
+
+
+button, 
+input[type="submit"],
+.button, {
+	padding: 20px 50px;
+	background: #000;
+	border-radius: 0;
+	font-size: 12px;
+	font-weight: normal;
+	color: #fff;
+	-webkit-transition: all .2s;
+	transition: all .2s;
+
+	&:hover {
+		background: #E3D4A9;
+		color: #000;
+	}
+
+	&:focus {
+		text-decoration: none;
+		border: none;
+		outline: none;
+		background: $alternative-color;
+	}	
+}
+
+.button {
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	&:hover {
+		background: #E3D4A9;
+		color: #000;
+	}
+}
+
+select {
+	padding: 5px;
+	text-transform: uppercase;
+}
+
+label {
+	display: inline-block;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="date"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="month"], 
+input[type="week"], 
+input[type="email"], 
+input[type="number"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="time"], 
+input[type="url"], 
+textarea,
+select {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    color: rgba(0,0,0,0.75);
+    display: block;
+    font-family: 'lato', sans-serif;
+    font-size: 16px;
+
+    &:focus {
+    	background: #fafafa;
+    	border-color: #999;
+    	box-shadow: 0 0 5px #999;
+    	outline: none;
+    }
+}
+
+select {
+	width: auto;
+}

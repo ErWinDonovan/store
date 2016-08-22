@@ -1,0 +1,85 @@
+
+
+@media (max-width: 1199px) {
+
+
+}
+
+@media (max-width: 1024px) {
+
+.product {
+
+	.summary {
+		width: 100%;
+	}
+
+	.images {
+		width: 100%;
+	}
+
+	.woocommerce-Reviews {
+	
+		#comments {
+			width: 100%;
+		}
+	
+		#review_form_wrapper {
+			width: 100%;
+		}
+	}
+}
+
+}
+
+@media (max-width: 994px) {
+
+
+
+}
+
+@media (max-width: 910px) {
+
+	.woocommerce {
+	
+		.site-main {
+			margin-right: 0px;
+			margin-left: 0px;
+		}
+
+		.products {
+	
+			.product {
+	   			width: 50%;
+			}
+		}
+	}
+}
+
+@media (max-width: 766px) {
+
+	.woocommerce {
+
+		.products {
+	
+			.product {
+	   			width: 100%;
+			}
+		}
+
+		.woocommerce-Reviews {
+	
+			#review_form_wrapper {
+	
+				#respond {
+	
+					.comment-form-author, .comment-form-email {
+						display: block;
+						width: 100%;
+						margin-bottom: 15px;
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
+}
