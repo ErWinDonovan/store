@@ -1,0 +1,133 @@
+.woocommerce-checkout {
+
+	h3 {
+		border-bottom: 3px solid #DDD;
+		padding-bottom: 10px;
+		font-size: 1.4375rem;
+	}
+
+	form.woocommerce-checkout {
+	
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	
+		.col2-set, .woocommerce-checkout-review-order {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	
+		.col2-set {
+			width: 66.66666667%;
+		}
+
+		.select2-choice {
+			border-radius: 0;
+			padding: 10px;
+			box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+			font-weight: 300;
+
+   				&:focus {
+   					box-shadow: 0 0 5px #999;
+   				}
+		}
+
+		.select2-dropdown-open {
+			box-shadow: 0 0 5px #999;
+
+			.select2-choice {
+				background: #fafafa;
+				box-shadow: 0s;
+			}
+		}
+	
+		#order_review_heading {
+			display: none;
+		}
+
+		.woocommerce-billing-fields {
+			margin-bottom: 15px;
+		}
+	
+		.woocommerce-checkout-review-order {
+			width: 33.33333333%;
+	
+			&:before {
+				content: "Your Order";
+				display: block;
+				font-weight: 900;
+	    		font-size: 1.4375rem;
+	    		line-height: 1.2173913043;
+	    		margin-bottom: 1.2173913043em;
+				border-bottom: 3px solid #DDD;
+				padding-bottom: 10px;
+			}
+		}
+
+		.wc_payment_methods {
+			margin-bottom: 15px;
+
+			li {
+				line-height: 1.4;
+			}
+
+			label {
+				text-transform: none;
+				margin-bottom: 0;
+			}
+
+			.payment_method_paypal {
+
+				img {
+					max-width: 150px;
+					margin-left: 5px;
+				}
+			}
+
+			.about_paypal {
+				display: none;
+			}
+		}
+
+		#ship-to-different-address-checkbox {
+			margin-left: 10px;
+		}
+	}
+}
+
+.woocommerce-order-received {
+
+	.woocommerce-thankyou-order-details {
+		line-height: 1.4;
+		margin-bottom: 15px;
+
+		strong {
+			font-weight: bold;
+		}
+	}
+
+	.entry-content {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.shop_table {
+		border-bottom: none;
+		margin-bottom: 30px;
+	}
+
+	.col-1 {
+		margin-bottom: 15px;
+	}
+
+	.col-1, .col-2 {
+		line-height: 1.4;
+	}
+
+	.customer_details {
+
+		td {
+			text-align: right;
+		}
+	}
+}

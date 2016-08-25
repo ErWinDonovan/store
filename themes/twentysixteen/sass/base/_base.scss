@@ -77,7 +77,8 @@ a {
 
 button, 
 input[type="submit"],
-.button, {
+.button,
+.button[disabled] {
 	padding: 20px 50px;
 	background: #000;
 	border-radius: 0;
@@ -97,6 +98,7 @@ input[type="submit"],
 		border: none;
 		outline: none;
 		background: $alternative-color;
+		color: #fff;
 	}	
 }
 
@@ -105,16 +107,57 @@ input[type="submit"],
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: bold;
+	visibility: visible;
+	opacity: 1;
+
 	&:hover {
 		background: #E3D4A9;
 		color: #000;
 	}
 }
 
-select {
-	padding: 5px;
-	text-transform: uppercase;
+.button[disabled] {
+	background: #000;
+	visibility: hidden;
+	opacity: 0;
 }
+
+thead {
+
+	tr {
+		border-bottom: 3px solid #DDD;
+
+		th {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 16px;
+		}
+	}
+}
+
+tbody,tfoot {
+
+	tr {
+		border-bottom: 1px dotted #DDD;
+
+		&:last-child {
+			border: none;
+		}
+	}
+	
+	th, td {
+		padding: 5px 0;
+	}
+}
+
+tfoot {
+
+	td {
+		text-align: right;
+	}
+}
+
+
 
 label {
 	display: inline-block;
@@ -156,5 +199,17 @@ select {
 }
 
 select {
+	padding: 5px;
+	text-transform: uppercase;
 	width: auto;
+}
+
+::-webkit-input-placeholder {
+	font-size: 16px;
+	font-family: "lato";
+	color: #aaa;
+}
+::-moz-placeholder          {
+	font-size: 16px;
+	font-family: "lato";
 }
