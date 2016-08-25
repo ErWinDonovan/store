@@ -39,11 +39,7 @@
 
 		.cart-collaterals {
 			width: 100%;
-
-			&:before {
-				content: "";
-				display: none;
-			}
+			border-left: none;
 		}
 	}
 }
@@ -59,6 +55,7 @@
 	
 		.woocommerce-checkout-review-order {
 			width: 100%;
+			border-left: none;
 		}
 	}
 }

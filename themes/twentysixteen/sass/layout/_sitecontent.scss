@@ -35,7 +35,15 @@
 	}
 
 	.woocommerce-info {
+		font-weight: bold;
 		margin-bottom: 15px;
+
+		&:before {
+			content: "\f05a";
+			color: orange;
+			font-family: "fontawesome";
+			margin-right: 10px;
+		}
 	}
 
 	.woocommerce-error {
@@ -160,8 +168,8 @@
 	}
 
 	.products {
-		display: flex;
-		flex-wrap: wrap;
+		@include flexbox;
+		@include flex-flow(wrap);
 		width: 100%;
 
 		h2 {
@@ -224,8 +232,8 @@
 
 .product {
 	position: relative;
-	display: flex;
-	flex-wrap: wrap;
+	@include flexbox;
+	@include flex-flow(wrap);
 
 	.images, .summary {
 		padding-left: 15px;
@@ -258,8 +266,8 @@
 	}
 
 	.summary {
-		display: flex;
-		flex-direction: column;
+		@include flexbox;
+		@include flex-flow(column);
 		width: 41.66666667%;
 		margin: 0;
 
@@ -302,7 +310,7 @@
 	.woocommerce-product-rating, 
 	.product_meta, 
 	div[itemprop="offers"] {
-		order: -1;
+		@include order(-1);
 	}
 
 	.product_title {
@@ -669,7 +677,7 @@
 	}
 
 	.comment_container {
-		display: flex;
+		@include flexbox;
 
 		img {
 			display: block;
@@ -687,15 +695,15 @@
 		}
 
 		.comment-text {
-			flex-grow: 1;
+			@include flex (1 1 auto);
 		}
 	}
 
 ///////////REVIEWS////////////
 
 	.woocommerce-Reviews {
-		display: flex;
-		flex-wrap: wrap;
+		@include flexbox;
+		@include flex-flow(wrap);
 		margin-left: -15px;
 		margin-right: -15px;
 

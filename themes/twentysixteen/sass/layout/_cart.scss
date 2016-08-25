@@ -13,9 +13,9 @@
 	}
 
 	.woocommerce {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: flex-start;
+		@include flexbox;
+		@include flex-flow(wrap);
+		@include align-items(flex-start);
 
 		> form, .cart-collaterals {
 			padding-left: 15px;
@@ -29,7 +29,7 @@
 		.cart-collaterals {
 			position: relative;
 			width: 33.33333333%;
-			border-left: 1px solid #ddd;
+			border-left: 1px solid #DDD;
 		}
 	}
 
