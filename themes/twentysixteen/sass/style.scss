@@ -2832,19 +2832,19 @@ p > video {
 		margin-bottom: 5.25em;
 	}
 
-	.entry-header,
-	.post-thumbnail,
-	.entry-content,
-	.entry-summary,
-	.entry-footer,
-	.comments-area,
-	.image-navigation,
-	.post-navigation,
-	.page-header,
-	.page-content,
-	.content-bottom-widgets {
-		margin-right: 23.0769%;
-	}
+	// .entry-header,
+	// .post-thumbnail,
+	// .entry-content,
+	// .entry-summary,
+	// .entry-footer,
+	// .comments-area,
+	// .image-navigation,
+	// .post-navigation,
+	// .page-header,
+	// .page-content,
+	// .content-bottom-widgets {
+	// 	margin-right: 23.0769%;
+	// }
 
 	.entry-title {
 		font-size: 33px;
@@ -3370,20 +3370,20 @@ p > video {
 		width: 100%;
 	}
 
-	.no-sidebar .entry-header,
-	.no-sidebar .entry-content,
-	.no-sidebar .entry-summary,
-	.no-sidebar .entry-footer,
-	.no-sidebar .comments-area,
-	.no-sidebar .image-navigation,
-	.no-sidebar .post-navigation,
-	.no-sidebar .pagination,
-	.no-sidebar .page-header,
-	.no-sidebar .page-content,
-	.no-sidebar .content-bottom-widgets {
-		margin-right: 15%;
-		margin-left: 15%;
-	}
+	// .no-sidebar .entry-header,
+	// .no-sidebar .entry-content,
+	// .no-sidebar .entry-summary,
+	// .no-sidebar .entry-footer,
+	// .no-sidebar .comments-area,
+	// .no-sidebar .image-navigation,
+	// .no-sidebar .post-navigation,
+	// .no-sidebar .pagination,
+	// .no-sidebar .page-header,
+	// .no-sidebar .page-content,
+	// .no-sidebar .content-bottom-widgets {
+	// 	margin-right: 15%;
+	// 	margin-left: 15%;
+	// }
 
 	.widecolumn {
 		padding-right: 15%;
@@ -3987,6 +3987,9 @@ p > video {
 @import "layout/sitecontent";
 @import "layout/cart";
 @import "layout/checkout";
+@import "layout/account";
 @import "layout/footer";
+
+@import "plugins/wcvendors";
 
 @import "layout/responsive";

@@ -1,0 +1,89 @@
+.wcvendors_sold_by_in_loop {
+	position: absolute;
+    top: 0px;
+    right: 15px;
+    display: block;
+    z-index: 20;
+    padding: 5px;
+    font-size: 10px;
+
+    a {
+    	color: #fff;
+    }
+}
+
+.wcvendors_cart_sold_by_meta {
+	margin-bottom: 15px;
+}
+
+.date-pick {
+	margin-bottom: 15px;
+}
+
+#wp-pv_seller_info-wrap, #wp-pv_shop_description-wrap {
+	border: 1px solid #CCC;
+	padding: 4px 0;
+}
+
+#wp-pv_seller_info-media-buttons, #wp-pv_shop_description-media-buttons {
+	margin-left: 4px;
+}
+
+.pv_shop_description {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+label[for="from"], label[for="to"] {
+	margin: 0 20px 0 0;
+	float: left;
+	line-height: 52px;
+}
+
+input.date-pick {
+	margin: 0 20px 0 0;
+	width: 200px;
+	float: left;
+	line-height: 28px;
+}
+
+
+input.btn-small {
+	line-height: 12px;
+}
+
+.table-vendor-sales-report {
+
+	thead, tbody {
+
+		th, td {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	.product {
+		border-top: 0;
+	}
+}
+
+.pv_paypal_container, 
+.pv_shop_name_container  {
+	float: left;
+	width: 46.6666666667%;
+}
+
+.pv_paypal_container {
+	margin-right: 6.6666666667%;	
+}
+
+.pv_paypal_container, 
+.pv_shop_name_container,
+#pv_seller_info_container,
+#pv_shop_description_container  {
+
+	>p {
+		font-size: 16px;
+	}
+
+}

@@ -3,7 +3,6 @@
 	h3 {
 		border-bottom: 3px solid #DDD;
 		padding-bottom: 10px;
-		font-size: 1.4375rem;
 	}
 
 	form.woocommerce-checkout {
@@ -19,6 +18,10 @@
 		.col2-set {
 			width: 66.66666667%;
 		}
+	}
+
+	.col-1, .col-2 {
+		width: 100%;
 	}
 
 	.select2-choice {
@@ -85,7 +88,7 @@
 		}
 
 		.about_paypal {
-			display: none;
+			margin-left: 5px;
 		}
 	}
 
@@ -115,18 +118,17 @@
 		margin-bottom: 30px;
 	}
 
-	.col-1 {
-		margin-bottom: 15px;
-	}
-
-	.col-1, .col-2 {
-		line-height: 1.4;
-	}
-
 	.customer_details {
 
 		td {
 			text-align: right;
 		}
+	}
+}
+
+.woocommerce-order-received {
+
+	.col-1, .col-2 {
+		width: 50%;
 	}
 }
