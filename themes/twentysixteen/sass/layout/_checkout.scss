@@ -43,70 +43,74 @@
 			box-shadow: 0s;
 		}
 	}
-	
-	#order_review_heading {
-		display: none;
+
+	.woocommerce-error {
+		width: auto;
+		@include flex(1 1 auto);
+	}	
+}
+
+.checkout {
+
+	.woocommerce-error {
+		width: 100%;
+	}
+}
+
+#order_review_heading {
+	display: none;
+}
+
+.woocommerce-billing-fields {
+	margin-bottom: 15px;
+}
+
+.woocommerce-checkout-review-order {
+	width: 33.33333333%;
+	border-left: 1px solid #DDD;
+
+	&:before {
+		content: "Your Order";
+		display: block;
+		font-weight: 900;
+   		font-size: 1.4375rem;
+   		line-height: 1.2173913043;
+   		margin-bottom: 1.2173913043em;
+		border-bottom: 3px solid #DDD;
+		padding-bottom: 10px;
+	}
+}
+
+.wc_payment_methods {
+	margin-bottom: 15px;
+
+	li {
+		line-height: 1.4;
 	}
 
-	.woocommerce-billing-fields {
-		margin-bottom: 15px;
+	label {
+		text-transform: none;
+		margin-bottom: 0;
 	}
 
-	.woocommerce-checkout-review-order {
-		width: 33.33333333%;
-		border-left: 1px solid #DDD;
-
-		&:before {
-			content: "Your Order";
-			display: block;
-			font-weight: 900;
-	   		font-size: 1.4375rem;
-	   		line-height: 1.2173913043;
-	   		margin-bottom: 1.2173913043em;
-			border-bottom: 3px solid #DDD;
-			padding-bottom: 10px;
-		}
-	}
-
-	.wc_payment_methods {
-		margin-bottom: 15px;
-
-		li {
-			line-height: 1.4;
-		}
-
-		label {
-			text-transform: none;
-			margin-bottom: 0;
-		}
-
-		.payment_method_paypal {
-			img {
-				max-width: 150px;
-				margin-left: 5px;
-			}
-		}
-
-		.about_paypal {
+	.payment_method_paypal {
+		img {
+			max-width: 150px;
 			margin-left: 5px;
 		}
 	}
 
-	#ship-to-different-address-checkbox {
-		margin-left: 10px;
+	.about_paypal {
+		display: none;
+		margin-left: 5px;
 	}
 }
 
+#ship-to-different-address-checkbox {
+	margin-left: 10px;
+}
+
 .woocommerce-order-received {
-
-	.woocommerce-thankyou-order-details {
-		line-height: 1.4;
-		margin-bottom: 15px;
-
-		strong {
-			font-weight: bold;
-		}
-	}
 
 	.entry-content {
 		padding-left: 15px;
@@ -118,6 +122,10 @@
 		margin-bottom: 30px;
 	}
 
+	.woocommerce-thankyou-order-received {
+		font-size: 14px;
+	}
+
 	.customer_details {
 
 		td {
@@ -126,9 +134,39 @@
 	}
 }
 
+.woocommerce-thankyou-order-details {
+	line-height: 1.4;
+	margin-bottom: 15px;
+
+	strong {
+		font-weight: bold;
+	}
+}
+
 .woocommerce-order-received {
 
 	.col-1, .col-2 {
 		width: 50%;
+	}
+}
+
+.checkout_coupon {
+	@include flexbox;
+	@include justify-content(space-between);
+
+	.form-row-first {
+		width: 80%;
+
+		input {
+			line-height: 30px;
+		}
+	}
+
+	.form-row-last {
+		padding-left: 10px;
+	}
+
+	.clear {
+		display: none;
 	}
 }

@@ -34,6 +34,18 @@
 	padding-right: 15px;
 }
 
+form {
+
+	>p {
+		
+		&:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+	}
+}
+
 label[for="from"], label[for="to"] {
 	margin: 0 20px 0 0;
 	float: left;
@@ -50,6 +62,7 @@ input.date-pick {
 
 input.btn-small {
 	line-height: 12px;
+	float: left !important;
 }
 
 .table-vendor-sales-report {

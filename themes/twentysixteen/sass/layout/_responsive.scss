@@ -7,28 +7,31 @@
 
 @media (max-width: 1024px) {
 
-	.product {
+	.woocommerce-page {
 	
-		.summary {
-			width: 100%;
-		}
-	
-		.images {
-			width: 100%;
-		}
-	
-		.woocommerce-Reviews {
+		.product {
 		
-			#comments {
+			.summary {
 				width: 100%;
 			}
 		
-			#review_form_wrapper {
+			.images {
 				width: 100%;
 			}
-		}
+		
+			.woocommerce-Reviews {
+			
+				#comments {
+					width: 100%;
+				}
+			
+				#review_form_wrapper {
+					width: 100%;
+				}
+			}
+		}	
 	}
-	
+
 	.woocommerce-cart {
 	
 		.woocommerce {
@@ -55,7 +58,7 @@
 		
 			.woocommerce-checkout-review-order {
 				width: 100%;
-				border-left: none;
+				border: none;
 			}
 		}
 	}
@@ -117,6 +120,7 @@
 			}
 		}
 	}
+
 }
 
 @media (max-width: 766px) {
@@ -144,6 +148,18 @@
 					}
 				}
 			}
+		}
+	}
+
+	.checkout_coupon {
+		display: block;
+
+		.form-row-first {
+			width: 100%;
+		}
+
+		.form-row-last {
+			padding-left: 0px;
 		}
 	}
 }
