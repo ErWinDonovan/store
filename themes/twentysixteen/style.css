@@ -4898,7 +4898,8 @@ b {
   font-size: 16px;
 }
 .woocommerce-account mark {
-  background: #fff;
+  background: #E3D4A9;
+  color: #000;
 }
 .woocommerce-account .woocommerce {
   display: -webkit-box;
